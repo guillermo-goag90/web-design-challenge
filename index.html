@@ -8,77 +8,72 @@
 
     <!--Bootstrap CSS-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    
+    <!--Our own CSS stylesheet-->
+    <link rel="stylesheet" href="style.css">
 
     <title>Hello, World!</title>
 
 </head>
 
-<!--Create Navigation (navbar)-->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Latitude</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Plots
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
-        </li>
-        <li class="nav-item"> <!--Difference between nav-item & nav item active-->
-          <a class="nav-link" href="#">Comparison</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Data</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+<body class="p-3 mb-2 bg-light text-dark">
 
-<body>
-    <!--Create landing page Grid or Layout based on a 12-column grid system by Bootstrap-->
-    <!--Start by creating a container element-->
-    <div class="container">
-        
-        <!--Move on to creating actual row/column grid-->
-        <div class="row">
-            <div class="col-md-8">
-                <h1>Summary: Latitude vs. X</h1>
-            </div>
-            <div class="col-md-4">
-                <h1>Visualizations</h1>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-8">
-                <div class="media">
-                    <img src="Resources/test.png" class="mr-3" alt="">
-                    <div class="text-justify">
-                        The purpose of this project was to analyze how weather changes as you get closer to the Equator.
-                        To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset
-                        on over 500 cities. <br/>
-                        <br/>
-                        After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude.
-                        Factors we looked at included temperature, cloudiness, wind speed, and humidity. This site provides
-                        the source data and visualizations created as part of the analysis, as well as explanations and
-                        descriptions of any trends and correlations witnessed.  
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand font-weight-bold" href="#">Latitude</a>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Plots
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
                     </div>
+                </li>
+                <li class="nav-item"> <!--Difference between nav-item & nav item active-->
+                    <a class="nav-link" href="#">Comparison</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Data</a>
+                </li>
+            </ul>
+          </div>
+    </nav>
+
+    <div class="container">
+
+        <div class="row justify-content-around top-buffer-row">
+            <div class="col-md-7 col-sm-12 bg-white">
+                <div class="div box-buffer-padding">
+                    <h1>Summary: Latitude vs. X</h1>
+                </div>
+                <img src="Resources/test.png" class="pull-left">
+                <div class="text-justify">
+
+                    The purpose of this project was to analyze how weather changes as you get closer to the Equator.
+                    To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset
+                    on over 500 cities. <br/>
+                    <br/>
+                    After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude.
+                    Factors we looked at included temperature, cloudiness, wind speed, and humidity. This site provides
+                    the source data and visualizations created as part of the analysis, as well as explanations and
+                    descriptions of any trends and correlations witnessed.
+
                 </div>
             </div>
-            <div>
 
+            <div class="col-md-4 col-sm-12 bg-white">
+                <div class="div box-buffer-padding">
+                    <h1>Visualizations</h1>
+                </div>
             </div>
+
         </div>
-
     </div>
-
+    <!--Create landing page Grid or Layout based on a 12-column grid system by Bootstrap-->
+    <!--Start by creating a container element-->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
