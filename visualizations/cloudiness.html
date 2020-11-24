@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
     <!--Our own CSS stylesheet-->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
 
     <title>Latitude</title>
   </head>
@@ -18,7 +18,7 @@
 
     <!--Navbar-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand font-weight-bold" href="#"><h1>Latitude</h1></a>
+      <a class="navbar-brand font-weight-bold" href="../index.html"><h1>Latitude</h1></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -29,17 +29,17 @@
               Plots
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="visualizations/max_temp.html">Max temperature</a>
-              <a class="dropdown-item" href="visualizations/humidity.html">Humidity</a>
-              <a class="dropdown-item" href="visualizations/cloudiness.html">Cloudiness</a>
-              <a class="dropdown-item" href="visualizations/wind_speed.html">Wind Speed</a>
+              <a class="dropdown-item" href="max_temp.html">Max temperature</a>
+              <a class="dropdown-item" href="humidity.html">Humidity</a>
+              <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+              <a class="dropdown-item" href="wind_speed.html">Wind Speed</a>
             </div>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="comparison.html">Comparison</a>
+            <a class="nav-link" href="../comparison.html">Comparison</a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="data.html">Data</a>
+            <a class="nav-link" href="../data.html">Data</a>
           </li>
         </ul>
       </div>
@@ -55,26 +55,22 @@
 
             <!--Title container-->
             <div class="div box-buffer-padding">
-              <h2 class=blog-post-title>Summary: Latitude vs. X</h2>
+              <h2 class=blog-post-title>Cloudiness</h2>
             </div><hr>
             
             <!--Img container-->
-            <div class="image-wrapper float-left pr-3">
-              <img src="assets/images/Fig1.png" class="img-fluid img-thumbnail" alt="Responsive image">
+            <div>
+              <img src="../assets/images/Fig3.png" class="img-fluid img-thumbnail" alt="Responsive image">
             </div>
             
             <!--Text container-->
-            <p class="container text-justify">
+            <br/><p class="container text-justify">
+              We do not appreciate a relationship between cloudiness and Latitude; thus, we could hypothesize that cloudiness
+              is more related to humidity and altitude.
               <br>
-              The purpose of this project was to analyze how weather changes as you get closer to the Equator.
-              To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset
-              on over 500 cities.
-            </p><br/>
-            <p class="container text-justify">
-              After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude.
-              Factors we looked at included temperature, cloudiness, wind speed, and humidity. This site provides
-              the source data and visualizations created as part of the analysis, as well as explanations and
-              descriptions of any trends and correlations witnessed.
+              <br>
+              While we would need more data to test this hypothesis, we do highlight that cloudiness appears to be a discrete
+              variable. This means that there is not a continuum of values along our Y-axis, but rather a step-like behavior.  
             </p>
           </div>
         </div>
@@ -94,16 +90,16 @@
             </div> -->
             <div class="img-container-sidebar">
               <div>
-                <a href="visualizations/max_temp.html"><img src="assets/images/Fig1.png" class="img-fluid" style="vertical-align: middle;"></a>
+                <a href="max_temp.html"><img src="../assets/images/Fig1.png" class="img-fluid"></a>
               </div>
               <div>
-                <a href="visualizations/humidity.html"><img src="assets/images/Fig2.png" class="img-fluid" style="vertical-align: middle;"></a>
+                <a href="humidity.html"><img src="../assets/images/Fig2.png" class="img-fluid"></a>
               </div>
               <div>
-                <a href="visualizations/cloudiness.html"><img src="assets/images/Fig3.png" class="img-fluid" style="vertical-align: middle;"></a>
+                <a href="cloudiness.html"><img src="../assets/images/Fig3.png" class="img-fluid"></a>
               </div>
               <div>
-                <a href="visualizations/wind_speed.html"><img src="assets/images/Fig4.png" class="img-fluid" style="vertical-align: middle;"></a>
+                <a href="wind_speed.html"><img src="../assets/images/Fig4.png" class="img-fluid"></a>
               </div>
             </div>
 

@@ -1,7 +1,70 @@
-.top-buffer-row {
-    margin-top: 30px;
+.bgr-color-main {
+    background-color: rgb(100, 100, 237);
 }
 
-.box-buffer-padding {
-    padding: 20px;
+#top-bottom-padding {
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
+
+body {
+    background-color: lightgray;
+}
+
+h1 {
+    font-weight: bold;
+    color: #4aaaa5
+}
+
+h2 {
+    font-weight: bold;
+    color: darkslateblue
+}
+
+h5 {
+    font-weight: bold;
+    color: #4aaaa5
+}
+
+#top-margin {
+    margin-top: 20px;
+}
+
+.top-buffer-row {
+    margin-top: 60px;
+}
+
+.top-extra-pad-mar {
+    padding: 25px;
+    margin-top:10px
+}
+
+.img-container-sidebar {  
+    display: grid;  
+    grid-gap: 5px;
+    padding-top: 20px;  
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    grid-template-rows: repeat(2, 150px);  
+}
+
+.img-container-sidebar > div > a > img:hover {
+    /* Visuals */
+    opacity: 0.6;
+  }
+
+.comparison-container-grid {  
+    display: grid;  
+    grid-template-columns: 1fr 1fr;  
+    grid-template-rows: 400px 400px 
+}
+
+.comparison-container-grid > .container-fluid > a > img {  
+    width: 85%;  
+    height: 85%;  
+    object-fit: cover;  
+}
+
+.comparison-container-grid > div > a> img:hover {
+    /* Visuals */
+    opacity: 0.6;
+  }
